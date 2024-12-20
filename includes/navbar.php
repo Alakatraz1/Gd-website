@@ -101,7 +101,7 @@
                                     <span>connect@gdgoenkabareilly.com
                                     </span></a>
                             </li>
-                            <li>
+                            <li style="display:flex;flex-direction:column;font-size:15px;gap:0px;">
                                 <a href="tel:9012616969"><i class="far fa-phone-volume"></i> +91 9012616969</a>
                                 <a href="tel:9258259001"><i class="far fa-phone-volume"></i> +91 9258259001</a>
                             </li>

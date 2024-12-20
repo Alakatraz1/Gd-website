@@ -128,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero-single" style="background: url(assets/home/smallalltop.jpg)">
+                    <div class="hero-single" style="background: url(assets/gd/images/home/yogi.jpeg)">
                         <div class="container">
                             <div class="row align-items-center">
                                 <div class="col-md-12 col-lg-7">
@@ -535,7 +535,7 @@
                                 </script>
 
                                 <div class="about-bottom">
-                                    <a href="application-form.php" class="theme-btn">Join Us
+                                    <a href="application-form.php" class="theme-btn" style="display:grid;place-items:center">Join Us
                                         <i class="fas fa-arrow-right-long"></i></a>
                                     <div class="about-phone">
                                         <div class="icon"
@@ -563,7 +563,103 @@
             </style>
 
 
-            <div class="counter-area pt-60 pb-60" style="background-image: url(assets/home/achievements.webp)">
+<div class="counter-area pt-60 pb-60">
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="assets/gd/images/home/achievement.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="counter-box">
+                    <div class="icon">
+                        <img src="assets/img/icon/course.svg" alt>
+                    </div>
+                    <div>
+                        <span class="counter" data-count="+" data-to="9" data-speed="3000">9</span>
+                        <h6 class="title">Years of Excellence</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="counter-box">
+                    <div class="icon" style="background-color:#c50227">
+                        <img src="assets/img/icon/graduation.svg" alt>
+                    </div>
+                    <div>
+                        <span class="counter" data-count="+" data-to="3600" data-speed="3000">3600</span>
+                        <h6 class="title">Students taught so far</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="counter-box">
+                    <div class="icon" style="background-color:var(--footer-bg)">
+                        <img src="assets/img/icon/teacher-2.svg" alt>
+                    </div>
+                    <div>
+                        <span class="counter" data-count="+" data-to="2000" data-speed="3000">2000 </span>
+                        <h6 class="title">+ Alumni</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="counter-box">
+                    <div class="icon" style="background-color:#3db2d5">
+                        <img src="assets/img/icon/award.svg" alt>
+                    </div>
+                    <div>
+                        <span class="counter" data-count="+" data-to="5" data-speed="3000">5</span>
+                        <h6 class="title">+ Awards</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.counter-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.counter-box span{
+    color: white !important;
+    
+}
+.counter-box h6{
+    color: white !important;
+    
+}
+.counter-box h6,.counter-box span {
+    
+    
+    
+    text-shadow: 
+        2px 2px 0px black,   /* Right and bottom shadow */
+        -2px -2px 0px black, /* Left and top shadow */
+        2px -2px 0px black,  /* Right and top shadow */
+        -2px 2px 0px black;  /* Left and bottom shadow */
+}
+
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(1px); /* Adjust the value for more or less blur */
+}
+
+</style>
+
+
+
+            <div class="counter-area pt-60 pb-60" style="background-image: url(assets/gd/images/home/achievement.mp4);display:none">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-sm-6">
@@ -1068,7 +1164,7 @@
 
 
             
-            <div class="cta-area" style="background-image: url(assets/gd/images/home/hero1.jpg)">
+            <div class="cta-area" style="background-image: url(assets/gd/images/home/hero5.jpg)">
                 <div class="container">
                     <div class="cta-wrapper">
                         <div class="row align-items-center">
@@ -1655,6 +1751,51 @@
                 </style>
 
                 <div class="row">
+                <div class="col-md-4 mb-4">
+                        <div class="square-box">
+                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
+                                <img src="assets/gd/yogi_image/1.webp" class="img-fluid square-content" alt="Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="square-box">
+                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
+                                <img src="assets/gd/yogi_image/2.webp" class="img-fluid square-content" alt="Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="square-box">
+                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
+                                <img src="assets/gd/yogi_image/3.webp" class="img-fluid square-content" alt="Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="square-box">
+                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
+                                <img src="assets/gd/yogi_image/4.webp" class="img-fluid square-content" alt="Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="square-box">
+                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
+                                <img src="assets/gd/yogi_image/5.jpeg" class="img-fluid square-content" alt="Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="square-box">
+                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
+                                <img src="assets/gd/yogi_image/6.webp" class="img-fluid square-content" alt="Image 3">
+                            </a>
+                        </div>
+                    </div>
+
+
+
                     <div class="col-md-4 mb-4">
                         <div class="square-box">
                             <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
