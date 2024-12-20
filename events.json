@@ -1,0 +1,12 @@
+{
+    "2024": {
+        "November": [
+            {"date": "2024-11-10", "event": "Science Fair"},
+            {"date": "2024-11-15", "event": "Parent-Teacher Meeting"}
+        ],
+        "December": [
+            {"date": "2024-12-05", "event": "Winter Concert"},
+            {"date": "2024-12-20", "event": "Holiday Break"}
+        ]
+    }
+}
