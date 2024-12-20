@@ -103,6 +103,7 @@
                             </li>
                             <li>
                                 <a href="tel:9012616969"><i class="far fa-phone-volume"></i> +91 9012616969</a>
+                                <a href="tel:9258259001"><i class="far fa-phone-volume"></i> +91 9258259001</a>
                             </li>
                         </ul>
                     </div>

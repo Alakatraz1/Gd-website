@@ -544,6 +544,7 @@
                                         <div class="number">
                                             <span>Call Now</span>
                                             <h6><a href="tel:9012616969">+91 9012616969</a></h6>
+                                            <h6><a href="tel:9258259001">+91 9258259001</a></h6>
                                         </div>
                                     </div>
                                 </div>

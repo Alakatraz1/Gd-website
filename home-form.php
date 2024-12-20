@@ -51,85 +51,155 @@
 
 
 <?php
-// Autoload PHPMailer classes
-function autoloadPHPMailer($className) {
+// Autoloader for PHPMailer
+function autoloadPHPMailer($className)
+{
     $libsDir = __DIR__ . '/libs/';
     $classMap = [
         'PHPMailer\\PHPMailer\\PHPMailer' => 'PHPMailer.php',
         'PHPMailer\\PHPMailer\\Exception' => 'Exception.php',
         'PHPMailer\\PHPMailer\\SMTP' => 'SMTP.php',
     ];
+
     if (isset($classMap[$className])) {
         require_once $libsDir . $classMap[$className];
     }
 }
+
 spl_autoload_register('autoloadPHPMailer');
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve and sanitize form data
-    $name = htmlspecialchars(strip_tags($_POST['name']));
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $phone = htmlspecialchars(strip_tags($_POST['phone']));
-    $messageContent = htmlspecialchars(strip_tags($_POST['message']));
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Sanitize and retrieve form data
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+    $messageContent = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
-    // Validate required fields
-    if (empty($name) || empty($email) || empty($phone) || empty($messageContent)) {
-        die('All fields are required.');
-    }
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die('Invalid email format.');
+    // Check if all fields are valid
+    if (!$name || !$email || !$phone || !$messageContent) {
+        echo '<div class="error-area py-120">
+<div class="container">
+<div class="col-md-6 mx-auto">
+<div class="error-wrapper">
+
+<h2>Invalid Input!</h2>
+<p>All fields are required, and email must be valid.</p>
+<a href="index.php" class="theme-btn">Go Back Home <i class="far fa-home"></i></a>
+</div>
+</div>
+</div>
+</div>';
+        exit;
     }
 
-    // Create the email content
-    $message = "
-    <h2>New Forum Submission</h2>
-    <p><strong>Name:</strong> $name</p>
-    <p><strong>Email:</strong> $email</p>
-    <p><strong>Phone:</strong> $phone</p>
-    <p><strong>Message:</strong><br>$messageContent</p>
+    // Admin email setup
+    $adminEmail = 'connect@gdgoenkabareilly.com';
+    $adminSubject = "New Inquiry Form Submission";
+    $adminMessage = "
+        <h2>New Inquiry Form Submission</h2>
+        <p><strong>Name:</strong> {$name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Phone:</strong> {$phone}</p>
+        <p><strong>Message:</strong> {$messageContent}</p>
     ";
 
-    // Send email using PHPMailer
+    // Create and send email to admin
     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
     try {
-        // Server settings
+        // SMTP configuration for admin email
         $mail->isSMTP();
         $mail->Host = 'smtp-relay.brevo.com';
         $mail->SMTPAuth = true;
-        $mail->Username = '7fc513001@smtp-brevo.com'; // Update with your email
-        $mail->Password = 'TcsW5fk8DtbXLPgV'; // Update with your SMTP password
+        $mail->Username = '80b4f1001@smtp-brevo.com';
+        $mail->Password = 'LkV7qCUrm0gKZBhy';
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        // Recipients
-        $mail->setFrom($email, $name);
-        $mail->addAddress('connect@gdgoenkabareilly.com'); // Recipient email
+        $mail->setFrom('botkarmadevi@gmail.com', 'G.D. Inquiry Form');
+        $mail->addAddress($adminEmail);
+        $mail->addReplyTo($email, $name);
 
-        // Content
         $mail->isHTML(true);
-        $mail->Subject = 'New Forum Submission';
-        $mail->Body = $message;
+        $mail->Subject = $adminSubject;
+        $mail->Body = $adminMessage;
 
         $mail->send();
-        echo 'Message has been sent successfully.';
+
+        // Send thank-you email to the user
+        $thankYouMail = new PHPMailer\PHPMailer\PHPMailer(true);
+        $thankYouSubject = "Thank You for Your Inquiry!";
+        $thankYouMessage = "
+            <h2>Dear {$name},</h2>
+            <p>Thank you for reaching out to us. We have received your message and will contact you shortly.</p>
+            <p>Best regards,<br>G.D. Group</p>
+        ";
+
+        $thankYouMail->isSMTP();
+        $thankYouMail->Host = 'smtp-relay.brevo.com';
+        $thankYouMail->SMTPAuth = true;
+        $thankYouMail->Username = '7fc513001@smtp-brevo.com';
+        $thankYouMail->Password = 'TcsW5fk8DtbXLPgV';
+        $thankYouMail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
+        $thankYouMail->Port = 587;
+
+        $thankYouMail->setFrom('botkarmadevi@gmail.com', 'G.D. Inquiry Form');
+        $thankYouMail->addAddress($email, $name);
+
+        $thankYouMail->isHTML(true);
+        $thankYouMail->Subject = $thankYouSubject;
+        $thankYouMail->Body = $thankYouMessage;
+
+        $thankYouMail->send();
+
+        echo '<div class="error-area py-120">
+<div class="container">
+<div class="col-md-6 mx-auto">
+<div class="error-wrapper">
+
+<h2>Message has been sent!</h2>
+<p>Check your mailbox for confirmation</p>
+<a href="index.php" class="theme-btn">Go Back Home <i class="far fa-home"></i></a>
+</div>
+</div>
+</div>
+</div>';
     } catch (PHPMailer\PHPMailer\Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo '<div class="error-area py-120">
+<div class="container">
+<div class="col-md-6 mx-auto">
+<div class="error-wrapper">
+
+<h2>Message not sent!</h2>
+<p>Message could not be sent. Mailer Error: ' . htmlspecialchars($mail->ErrorInfo) . '</p>
+<a href="index.php" class="theme-btn">Go Back Home <i class="far fa-home"></i></a>
+</div>
+</div>
+</div>
+</div>';
     }
 } else {
-    echo 'Invalid request method.';
+    echo '<div class="error-area py-120">
+<div class="container">
+<div class="col-md-6 mx-auto">
+<div class="error-wrapper">
+
+<h2>Invalid Request!</h2>
+<p>Please use the form to submit your inquiry.</p>
+<a href="index.php" class="theme-btn">Go Back Home <i class="far fa-home"></i></a>
+</div>
+</div>
+</div>
+</div>';
 }
 ?>
 
-
-</main>
-<?php include('includes/footer.php')?>
 
 
 
 <a href="404.php#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
 
-
+<?php include('includes/footer.php')?>
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.7.1.min.js"></script>
 <script src="assets/js/modernizr.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>

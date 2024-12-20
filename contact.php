@@ -116,6 +116,7 @@
                                     <div class="contact-info-content">
                                         <h5>Call Us</h5>
                                         <p><a href="tel:9012616969">+91 9012616969</a></p>
+                                        <p><a href="tel:9258259001">+91 9258259001</a></p>
                                     </div>
 
                                 </div>

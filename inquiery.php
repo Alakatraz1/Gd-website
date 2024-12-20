@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('botkarmadevi@gmail.com', 'Omni Inquiry Form');
+        $mail->setFrom('botkarmadevi@gmail.com', 'G.D. Inquiry Form');
         $mail->addAddress('connect@gdgoenkabareilly.com'); // Admin email
         if ($email) {
             $mail->addReplyTo($email, $name);
