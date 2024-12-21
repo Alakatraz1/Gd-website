@@ -41,10 +41,10 @@
 
 <div class="site-breadcrumb" style="background: url(assets/home/alltop.webp)">
 <div class="container">
-<h2 class="breadcrumb-title">Form Submittion</h2>
+<h2 class="breadcrumb-title">Form Submission</h2>
 <ul class="breadcrumb-menu">
 <li><a href="index.php">Home</a></li>
-<li class="active">Form Submittion</li>
+<li class="active">Form Submission</li>
 </ul>
 </div>
 </div>
@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('botkarmadevi@gmail.com', 'G.D. Inquiry Form');
+        $mail->setFrom('botkarmadevi@gmail.com', 'G.D. Goenka Bareilly Inquiry Form');
         $mail->addAddress($adminEmail);
         $mail->addReplyTo($email, $name);
 
@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $thankYouMessage = "
             <h2>Dear {$name},</h2>
             <p>Thank you for reaching out to us. We have received your message and will contact you shortly.</p>
-            <p>Best regards,<br>G.D. Group</p>
+            <p>Best regards,<br>G.D. Goenka Bareilly Group</p>
         ";
 
         $thankYouMail->isSMTP();
@@ -143,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $thankYouMail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $thankYouMail->Port = 587;
 
-        $thankYouMail->setFrom('botkarmadevi@gmail.com', 'G.D. Inquiry Form');
+        $thankYouMail->setFrom('botkarmadevi@gmail.com', 'G.D. Goenka Bareilly Inquiry Form');
         $thankYouMail->addAddress($email, $name);
 
         $thankYouMail->isHTML(true);

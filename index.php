@@ -444,7 +444,7 @@
                                     .read-more-btn {
                                         background: none;
                                         border: none;
-                                        color:#c50227;
+                                        color: #c50227;
                                         /* Matches the user's preferred color */
                                         cursor: pointer;
                                         font-weight: bold;
@@ -535,7 +535,8 @@
                                 </script>
 
                                 <div class="about-bottom">
-                                    <a href="application-form.php" class="theme-btn" style="display:grid;place-items:center">Join Us
+                                    <a href="application-form.php" class="theme-btn"
+                                        style="display:grid;place-items:center">Join Us
                                         <i class="fas fa-arrow-right-long"></i></a>
                                     <div class="about-phone">
                                         <div class="icon"
@@ -563,103 +564,112 @@
             </style>
 
 
-<div class="counter-area pt-60 pb-60">
-    <video autoplay muted loop playsinline class="background-video">
-        <source src="assets/gd/images/home/achievement.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-box">
-                    <div class="icon">
-                        <img src="assets/img/icon/course.svg" alt>
-                    </div>
-                    <div>
-                        <span class="counter" data-count="+" data-to="9" data-speed="3000">9</span>
-                        <h6 class="title">Years of Excellence</h6>
+            <div class="counter-area pt-60 pb-60">
+                <video autoplay muted loop playsinline class="background-video">
+                    <source src="assets/gd/images/home/achievement.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter-box">
+                                <div class="icon">
+                                    <img src="assets/img/icon/course.svg" alt>
+                                </div>
+                                <div>
+                                    <span class="counter" data-count="+" data-to="9" data-speed="3000">9</span>
+                                    <h6 class="title">Years of Excellence</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter-box">
+                                <div class="icon" style="background-color:#c50227">
+                                    <img src="assets/img/icon/graduation.svg" alt>
+                                </div>
+                                <div>
+                                    <span class="counter" data-count="+" data-to="3600" data-speed="3000">3600</span>
+                                    <h6 class="title">Students taught so far</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter-box">
+                                <div class="icon" style="background-color:var(--footer-bg)">
+                                    <img src="assets/img/icon/teacher-2.svg" alt>
+                                </div>
+                                <div>
+                                    <span class="counter" data-count="+" data-to="2000" data-speed="3000">2000 </span>
+                                    <h6 class="title">+ Alumni</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter-box">
+                                <div class="icon" style="background-color:#3db2d5">
+                                    <img src="assets/img/icon/award.svg" alt>
+                                </div>
+                                <div>
+                                    <span class="counter" data-count="+" data-to="5" data-speed="3000">5</span>
+                                    <h6 class="title">+ Awards</h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-box">
-                    <div class="icon" style="background-color:#c50227">
-                        <img src="assets/img/icon/graduation.svg" alt>
-                    </div>
-                    <div>
-                        <span class="counter" data-count="+" data-to="3600" data-speed="3000">3600</span>
-                        <h6 class="title">Students taught so far</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-box">
-                    <div class="icon" style="background-color:var(--footer-bg)">
-                        <img src="assets/img/icon/teacher-2.svg" alt>
-                    </div>
-                    <div>
-                        <span class="counter" data-count="+" data-to="2000" data-speed="3000">2000 </span>
-                        <h6 class="title">+ Alumni</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-box">
-                    <div class="icon" style="background-color:#3db2d5">
-                        <img src="assets/img/icon/award.svg" alt>
-                    </div>
-                    <div>
-                        <span class="counter" data-count="+" data-to="5" data-speed="3000">5</span>
-                        <h6 class="title">+ Awards</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<style>
-.counter-area {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-.counter-box span{
-    color: white !important;
-    
-}
-.counter-box h6{
-    color: white !important;
-    
-}
-.counter-box h6,.counter-box span {
-    
-    
-    
-    text-shadow: 
-        2px 2px 0px black,   /* Right and bottom shadow */
-        -2px -2px 0px black, /* Left and top shadow */
-        2px -2px 0px black,  /* Right and top shadow */
-        -2px 2px 0px black;  /* Left and bottom shadow */
-}
+            <style>
+                .counter-area {
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                }
 
+                .counter-box span {
+                    color: white !important;
 
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    filter: blur(1px); /* Adjust the value for more or less blur */
-}
+                }
 
-</style>
+                .counter-box h6 {
+                    color: white !important;
+
+                }
+
+                .counter-box h6,
+                .counter-box span {
 
 
 
-            <div class="counter-area pt-60 pb-60" style="background-image: url(assets/gd/images/home/achievement.mp4);display:none">
+                    text-shadow:
+                        2px 2px 0px black,
+                        /* Right and bottom shadow */
+                        -2px -2px 0px black,
+                        /* Left and top shadow */
+                        2px -2px 0px black,
+                        /* Right and top shadow */
+                        -2px 2px 0px black;
+                    /* Left and bottom shadow */
+                }
+
+
+                .background-video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: -1;
+                    filter: blur(1px);
+                    /* Adjust the value for more or less blur */
+                }
+            </style>
+
+
+
+            <div class="counter-area pt-60 pb-60"
+                style="background-image: url(assets/gd/images/home/achievement.mp4);display:none">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-sm-6">
@@ -1163,7 +1173,7 @@
             </style>
 
 
-            
+
             <div class="cta-area" style="background-image: url(assets/gd/images/home/hero5.jpg)">
                 <div class="container">
                     <div class="cta-wrapper">
@@ -1194,7 +1204,7 @@
             </div>
 
 
-            <div class="event-area bg py-120" id="home-event">
+            <div class="event-area bg py-120 " id="home-event">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 mx-auto">
@@ -1258,6 +1268,17 @@
 
                             </div>
                         </div>
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img src="assets/gd/images/events/gandhi.jpg" alt>
+                            </div>
+                            <div class="event-info">
+
+                                <h4 class="event-title"><a href="#">Gandhi Jayanti</a></h4>
+                                <p>2nd Oct</p>
+
+                            </div>
+                        </div>
 
 
 
@@ -1266,6 +1287,8 @@
                     </div>
                 </div>
             </div>
+
+
             <style>
                 .blog-thumbnail {
                     position: relative;
@@ -1329,7 +1352,7 @@
 
                 .blog-meta a {
                     text-decoration: none;
-                    color:#c50227;
+                    color: #c50227;
                 }
 
                 .blog-meta a:hover {
@@ -1339,14 +1362,14 @@
                 .read-more {
                     text-decoration: none;
                     color: #fff;
-                    background-color:#c50227;
+                    background-color: #c50227;
                     padding: 5px 15px;
                     border-radius: 5px;
                 }
 
                 .read-more:hover {
                     background-color: white;
-                    color:#c50227;
+                    color: #c50227;
                 }
             </style>
 
@@ -1356,6 +1379,49 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <h2 class="site-title my-3">School News and <span> Updates</span></h2>
+                        <div class="col-lg-5">
+                            <div class="blog-thumbnail">
+                                <img src="assets/gd/yogi_image/6.jpeg" alt="Blog Image">
+                                <div class="blog-date">
+                                    <div class="blog-date-day">13</div>
+                                    <div class="blog-date-month">Dec</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="blog-content">
+                                <h3 class="blog-title">
+                                    <a href="#" style="color:#c50227">
+                                        A Historic Day for GD Goenka School, Bareilly!
+                                    </a>
+                                </h3>
+                                <h1>
+                                    <a href="#">Hon'ble Chief Minister Yogi Adityanath Graces Us with His
+                                        Presence</a>
+
+                                    </h3>
+                                    <div class="blog-meta">
+                                        <span>By <a href="#">GD Goenka Bareilly</a></span>
+
+                                    </div>
+                                    <p>
+                                        At GD Goenka Public School, Bareilly, we strive to create a holistic environment
+                                        that fosters academic excellence, leadership, and character development. It was
+                                        a truly momentous occasion for us as we welcomed the Hon’ble Chief Minister of
+                                        Uttar Pradesh, Shri Yogi Adityanath, to our school on....
+                                        <a class="read-more" href="#">Read
+                                            More</a>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+
+                <div class="col-lg-12">
+                    <div class="row">
+
                         <div class="col-lg-5">
                             <div class="blog-thumbnail">
                                 <img src="assets/gd/news/main.jpg" alt="Blog Image">
@@ -1368,14 +1434,12 @@
                         <div class="col-lg-7">
                             <div class="blog-content">
                                 <h3 class="blog-title">
-                                    <a href="news.php"
-                                        style="color:#c50227">
+                                    <a href="news.php" style="color:#c50227">
                                         Proud Moment for Our School!
                                     </a>
                                 </h3>
                                 <h1>
-                                    <a
-                                        href="news.php">Gauri
+                                    <a href="news.php">Gauri
                                         Sri Vastav Shines on the Global Stage</a>
 
                                     </h3>
@@ -1391,8 +1455,7 @@
                                         at the prestigious international conference, ‘Embracing Artificial Intelligence
                                         for Sustainability and Life Skills,’ held in Paro, Bhutan, on the 24th and 25th
                                         of August 2024....
-                                        <a class="read-more"
-                                            href="news.php">Read
+                                        <a class="read-more" href="news.php">Read
                                             More</a>
                                     </p>
                             </div>
@@ -1400,6 +1463,8 @@
                     </div>
                 </div>
             </div>
+
+
 
             <div class="event-area bg pt-50 pb-120" style="background-color:#b9b9b9">
                 <div class="container">
@@ -1529,7 +1594,7 @@
                         }
 
                         .department-item1 {
-                            background-color:#c50227;
+                            background-color: #c50227;
 
                         }
 
@@ -1727,8 +1792,7 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <img loading="lazy" decoding="async"
-                                    src="assets/gd/logo/logo2.png"
+                                <img loading="lazy" decoding="async" src="assets/gd/logo/logo2.png"
                                     alt="gdgoenkabareilly" width="50" height="50" class="rounded-circle">
                             </div>
 
@@ -1740,18 +1804,19 @@
                     </div>
                 </div>
                 <style>
-                    .bottom-buttom{
-                        background-color:#c50227;
+                    .bottom-buttom {
+                        background-color: #c50227;
                     }
-                     .bottom-buttom:hover {
-                        color:#c50227;
+
+                    .bottom-buttom:hover {
+                        color: #c50227;
                         background-color: white;
-                        border:3px black solid;
+                        border: 3px black solid;
                     }
                 </style>
 
                 <div class="row">
-                <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="square-box">
                             <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
                                 <img src="assets/gd/yogi_image/1.webp" class="img-fluid square-content" alt="Image 3">
@@ -1765,20 +1830,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="square-box">
-                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
-                                <img src="assets/gd/yogi_image/3.webp" class="img-fluid square-content" alt="Image 3">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="square-box">
-                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
-                                <img src="assets/gd/yogi_image/4.webp" class="img-fluid square-content" alt="Image 3">
-                            </a>
-                        </div>
-                    </div>
+
+
                     <div class="col-md-4 mb-4">
                         <div class="square-box">
                             <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
@@ -1786,13 +1839,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="square-box">
-                            <a href="https://www.instagram.com/gdgoenkabareilly/" target="_blank">
-                                <img src="assets/gd/yogi_image/6.webp" class="img-fluid square-content" alt="Image 3">
-                            </a>
-                        </div>
-                    </div>
+                    
+
 
 
 
@@ -1978,7 +2026,7 @@
             </div>
             <style>
                 .faq1 {
-                    background-color:#c50227 !important;
+                    background-color: #c50227 !important;
 
                 }
 

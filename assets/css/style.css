@@ -1370,7 +1370,7 @@ label {
     height: 100%;
     left: -.5px;
     top: 0;
-    background: rgba(11, 28, 57, .7);
+    background: rgba(11, 28, 57, 0.378);
     z-index: -1
 }
 

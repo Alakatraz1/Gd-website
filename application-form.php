@@ -117,7 +117,7 @@
                 <div class="container">
                     <div class="application-form">
                         <h3>Online Registration Form</h3>
-                        <form action="submittion_forum.php" method="post">
+                        <form action="submission_form.php" method="post">
                             <div class="row">
                                 <h5 class="mb-3">Basic Information</h5>
                                 <div class="col-lg-6">

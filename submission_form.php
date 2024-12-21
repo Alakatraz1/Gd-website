@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Create the email content
     $message = "
-<h2>New Forum Submission</h2>
+<h2>New Form Submission</h2>
 <p><strong>Student's Name:</strong> $firstname</p>
 <p><strong>Date of Birth:</strong> $dob</p>
 <p><strong>Class Applying For:</strong> $program</p>
@@ -112,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         // Always use the verified sender email in the "From" field
-        $mail->setFrom('botkarmadevi@gmail.com', 'Omni Admission Form');
+        $mail->setFrom('botkarmadevi@gmail.com', 'G.D. Goenka Bareilly Admission Form');
 
         // Set the user's input email in the "Reply-To" field
         $mail->addReplyTo($email, $firstname);
@@ -122,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'New Forum Submission';
+        $mail->Subject = 'New Form Submission';
         $mail->Body = $message;
 
         $mail->send();
@@ -140,14 +140,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $thankYouMail->setFrom('botkarmadevi@gmail.com', 'G.D. Goenka Admission Team');
         $thankYouMail->addAddress($email, $firstname); // To the form filler
 
-        $thankYouMail->addReplyTo('connect@gdgoenkabareilly.com', 'G.D. Goenka');
+        $thankYouMail->addReplyTo('connect@gdgoenkabareilly.com', 'G.D. Goenka Bareilly');
 
         $thankYouMail->isHTML(true);
         $thankYouMail->Subject = 'Thank You for Your Submission!';
         $thankYouMail->Body = "
             <h2>Dear $firstname,</h2>
             <p>Thank you for submitting your form. We have received your information and will contact you soon.</p>
-            <p>Best Regards,<br>G.D Goenka Team</p>
+            <p>Best Regards,<br>G.D. Goenka Bareilly Team</p>
         ";
 
         // Send the thank-you email

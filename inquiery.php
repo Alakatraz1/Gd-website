@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Create the email content for admin
     $adminMessage = "
-        <h2>New Forum Submission</h2>
+        <h2>New Form Submission</h2>
         <p><strong>Name:</strong> $name</p>
         <p><strong>Phone:</strong> $phone</p>
         <p><strong>Email:</strong> $email</p>
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('botkarmadevi@gmail.com', 'G.D. Inquiry Form');
+        $mail->setFrom('botkarmadevi@gmail.com', 'G.D. Goenka Bareilly Inquiry Form');
         $mail->addAddress('connect@gdgoenkabareilly.com'); // Admin email
         if ($email) {
             $mail->addReplyTo($email, $name);
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $thankYouMessage = "
             <h2>Dear $name,</h2>
             <p>Thank you for submitting your inquiry. We have received your information and will contact you shortly.</p>
-            <p>Best Regards,<br>G.D. Group</p>
+            <p>Best Regards,<br>G.D. Goenka Bareilly Group</p>
         ";
 
         $thankYouMail->isSMTP();
@@ -80,9 +80,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $thankYouMail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $thankYouMail->Port = 587;
 
-        $thankYouMail->setFrom('botkarmadevi@gmail.com', 'G.D. Inquiry Form');
+        $thankYouMail->setFrom('botkarmadevi@gmail.com', 'G.D. Goenka Bareilly Inquiry Form');
         $thankYouMail->addAddress($email, $name); // Send to the form filler
-        $thankYouMail->addReplyTo('connect@gdgoenkabareilly.com', 'G.D. Goenka'); // Reply-To field set to connect@
+        $thankYouMail->addReplyTo('connect@gdgoenkabareilly.com', 'G.D. Goenka Bareilly'); // Reply-To field set to connect@
 
         $thankYouMail->isHTML(true);
         $thankYouMail->Subject = $thankYouSubject;

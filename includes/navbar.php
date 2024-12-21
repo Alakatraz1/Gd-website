@@ -92,7 +92,7 @@
                             <li>
                                 <a href="https://maps.app.goo.gl/Y7EmAFKBJ3cor7gx5" target="_blank"><i
                                         class="far fa-location-dot"></i>
-                                    Campus: Near Rohilkhand University,Dohra Road,
+                                    Near Rohilkhand University,Dohra Road,
                                     Bareilly,
                                     U.P.</a>
                             </li>
@@ -101,9 +101,9 @@
                                     <span>connect@gdgoenkabareilly.com
                                     </span></a>
                             </li>
-                            <li style="display:flex;flex-direction:column;font-size:15px;gap:0px;">
-                                <a href="tel:9012616969"><i class="far fa-phone-volume"></i> +91 9012616969</a>
-                                <a href="tel:9258259001"><i class="far fa-phone-volume"></i> +91 9258259001</a>
+                            <li >
+                                <a href="tel:9012616969"><i class="far fa-phone-volume"></i>9012616969</a>
+                                <a href="tel:9258259001">- 9258259001</a>
                             </li>
                         </ul>
                     </div>
@@ -144,7 +144,7 @@
 
         }
 
-        @media(max-width:800px) {
+        @media(max-width:1000px) {
             .navbar {
                 background-color: var(--footer-bg) !important;
             }
