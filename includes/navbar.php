@@ -81,7 +81,15 @@
     </div>
     </div>
 
-
+<style>
+    @media (max-width:1200px) {
+        .header-top #phone-flex{
+            display:flex;
+            flex-direction: column;
+        }
+        
+    }
+</style>
     <div class="header-top">
         <div class="container">
             <div class="header-top-wrap">
@@ -101,13 +109,14 @@
                                     <span>connect@gdgoenkabareilly.com
                                     </span></a>
                             </li>
-                            <li >
-                                <a href="tel:9012616969"><i class="far fa-phone-volume"></i>9012616969</a>
-                                <a href="tel:9258259001">- 9258259001</a>
+                            <li style="font-size:15px" id="phone-flex">
+                                <a href="tel:9012616969"><i class="far fa-phone-volume"></i>9012616969,</a>
+                                <a href="tel:9258259001">9258259001</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+                
                 <div class="header-top-left">
                     <div class="header-top-social" style="display:flex;justify-content:center;align-items:start;">
 
@@ -281,8 +290,8 @@
                             <a class="nav-link" href="result.php">Result</a>
 
                         </li>
-                        <li class="nav-item dropdown" style="display:none">
-                            <a class="nav-link " href="gallery.php#">Gallery</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="gallery.php">Gallery</a>
 
 
 
@@ -451,8 +460,8 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown" style="display:none">
-                            <a class="nav-link " href="gallery.php#">Gallery</a>
+                        <li class="nav-item dropdown" >
+                            <a class="nav-link " href="gallery.php">Gallery</a>
 
 
 

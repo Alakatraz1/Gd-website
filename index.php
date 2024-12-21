@@ -158,6 +158,127 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="hero-single" style="background: url(assets/gd/images/home/hero6.webp)">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 col-lg-7">
+                                    <div class="hero-content">
+                                        <h6 class="hero-sub-title" data-animation="fadeInDown" data-delay=".25s">
+                                            <i class="far fa-book-open-reader"></i>G.D. Goenka School
+                                        </h6>
+                                        <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                            Welcome to <span>G.D. Goenka Bareilly</span>, where excellence meets
+                                            opportunity
+                                        </h1 style="font-size">
+                                        <p data-animation="fadeInLeft" data-delay=".75s" style="text-align:justify">
+                                            Unlock your child’s full potential with a world-class education in a
+                                            nurturing and supportive environment. At G.D. Goenka Public School,
+                                            Bareilly,
+                                            we are dedicated to empowering students with the knowledge, skills, and
+                                            values they need to thrive in a rapidly changing world
+                                        </p>
+                                        <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
+                                            <a href="about.php" class="theme-btn">About Us<i
+                                                    class="fas fa-arrow-right-long"></i></a>
+                                            <a href="contact.php" class="theme-btn theme-btn2">Learn More<i
+                                                    class="fas fa-arrow-right-long"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-single" style="background: url(assets/gd/images/home/hero7.webp)">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 col-lg-7">
+                                    <div class="hero-content">
+                                        <h6 class="hero-sub-title" data-animation="fadeInDown" data-delay=".25s">
+                                            <i class="far fa-book-open-reader"></i>G.D. Goenka School
+                                        </h6>
+                                        <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                            Welcome to <span>G.D. Goenka Bareilly</span>, where excellence meets
+                                            opportunity
+                                        </h1 style="font-size">
+                                        <p data-animation="fadeInLeft" data-delay=".75s" style="text-align:justify">
+                                            Unlock your child’s full potential with a world-class education in a
+                                            nurturing and supportive environment. At G.D. Goenka Public School,
+                                            Bareilly,
+                                            we are dedicated to empowering students with the knowledge, skills, and
+                                            values they need to thrive in a rapidly changing world
+                                        </p>
+                                        <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
+                                            <a href="about.php" class="theme-btn">About Us<i
+                                                    class="fas fa-arrow-right-long"></i></a>
+                                            <a href="contact.php" class="theme-btn theme-btn2">Learn More<i
+                                                    class="fas fa-arrow-right-long"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-single" style="background: url(assets/gd/images/home/hero8.webp)">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 col-lg-7">
+                                    <div class="hero-content">
+                                        <h6 class="hero-sub-title" data-animation="fadeInDown" data-delay=".25s">
+                                            <i class="far fa-book-open-reader"></i>G.D. Goenka School
+                                        </h6>
+                                        <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                            Welcome to <span>G.D. Goenka Bareilly</span>, where excellence meets
+                                            opportunity
+                                        </h1 style="font-size">
+                                        <p data-animation="fadeInLeft" data-delay=".75s" style="text-align:justify">
+                                            Unlock your child’s full potential with a world-class education in a
+                                            nurturing and supportive environment. At G.D. Goenka Public School,
+                                            Bareilly,
+                                            we are dedicated to empowering students with the knowledge, skills, and
+                                            values they need to thrive in a rapidly changing world
+                                        </p>
+                                        <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
+                                            <a href="about.php" class="theme-btn">About Us<i
+                                                    class="fas fa-arrow-right-long"></i></a>
+                                            <a href="contact.php" class="theme-btn theme-btn2">Learn More<i
+                                                    class="fas fa-arrow-right-long"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-single" style="background: url(assets/gd/images/home/hero9.webp)">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 col-lg-7">
+                                    <div class="hero-content">
+                                        <h6 class="hero-sub-title" data-animation="fadeInDown" data-delay=".25s">
+                                            <i class="far fa-book-open-reader"></i>G.D. Goenka School
+                                        </h6>
+                                        <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                            Welcome to <span>G.D. Goenka Bareilly</span>, where excellence meets
+                                            opportunity
+                                        </h1 style="font-size">
+                                        <p data-animation="fadeInLeft" data-delay=".75s" style="text-align:justify">
+                                            Unlock your child’s full potential with a world-class education in a
+                                            nurturing and supportive environment. At G.D. Goenka Public School,
+                                            Bareilly,
+                                            we are dedicated to empowering students with the knowledge, skills, and
+                                            values they need to thrive in a rapidly changing world
+                                        </p>
+                                        <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
+                                            <a href="about.php" class="theme-btn">About Us<i
+                                                    class="fas fa-arrow-right-long"></i></a>
+                                            <a href="contact.php" class="theme-btn theme-btn2">Learn More<i
+                                                    class="fas fa-arrow-right-long"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <style>
@@ -1408,9 +1529,8 @@
                                         At GD Goenka Public School, Bareilly, we strive to create a holistic environment
                                         that fosters academic excellence, leadership, and character development. It was
                                         a truly momentous occasion for us as we welcomed the Hon’ble Chief Minister of
-                                        Uttar Pradesh, Shri Yogi Adityanath, to our school on....
-                                        <a class="read-more" href="#">Read
-                                            More</a>
+                                        Uttar Pradesh, Shri Yogi Adityanath, to our school on 13th Dec 2024.
+                                        
                                     </p>
                             </div>
                         </div>
@@ -1465,15 +1585,32 @@
             </div>
 
 
-
-            <div class="event-area bg pt-50 pb-120" style="background-color:#b9b9b9">
-                <div class="container">
+<style>
+    .event-area:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--footer-bg);
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+}
+.event-area{
+    
+    z-index: 1;
+}
+</style>
+            <div class="event-area bg pt-50 pb-120" style="background:url('assets/gd/images/home/hero9.webp'),rgba(25, 95, 226, 0.5);background-position:center; background-size: contain;background-repeat: repeat;background-blend-mode: multiply;">
+                <div class="container" style="z-index:999">
                     <div class="row">
                         <div class="col-lg-12 mx-auto">
                             <div class="site-heading text-center">
                                 <span class="site-title-tagline"><i class="far fa-book-open-reader"></i>
                                     Enrolment</span>
-                                <h2 class="site-title">Secure Your Child’s Future with <br><span>G.D Goenka
+                                <h2 class="site-title" style="color:white">Secure Your Child’s Future with <br><span>G.D Goenka
                                         School!</span></h2>
                                 <p style="color:white">Don't miss out on the opportunity to provide your child with a
                                     world-class education
@@ -1866,7 +2003,7 @@
                         </div>
                     </div>
                     <div style="display:flex;justify-content:center;align-items:center">
-                        <a class="bottom-buttom" href="https://www.instagram.com/gdgoenkabareilly/"
+                        <a class="bottom-buttom" href="/gallery.php"
                             style="border:none;padding:10px;font-size:large;border-radius:10px;">Load More</a>
                     </div>
                 </div>
